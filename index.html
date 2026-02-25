@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Hello World em Javascript!</title>
+</head>
+<body>
+    <noscript>
+        Javascript Desabilitado! Favor habilitar no seu computador.
+    </noscript>
+
+    <form name="validalogin" onsubmit="event.preventDefault(); validaLogin();">
+        <h1>Login</h1>
+
+        <label for="usuario">Usuario:</label>
+        <input id="usuario" name="usuario" type="text" placeholder="Nome de Usuario">
+
+        <label for="senha">Senha:</label>
+        <input id="senha" name="senha" type="password" placeholder="Senha">
+
+        <button type="submit">Comparar!</button>
+    </form>
+
+    <script src="meuscript.js"></script>
+</body>
+</html>
