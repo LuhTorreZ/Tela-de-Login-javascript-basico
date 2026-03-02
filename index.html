@@ -4,26 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Hello World em Javascript!</title>
+    <meta name="author" content="Nome do autor">
+    <meta name="description" content="Template inicial do HTML.">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>TEMA 05</title>
 </head>
 <body>
-    <noscript>
-        Javascript Desabilitado! Favor habilitar no seu computador.
-    </noscript>
+    <header class="cabecalho">
+        <h1>Cabeçalho do site</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="./html/pagina2.html">Tarefas</a></li>
+        </ul>
+    </nav>
 
-    <form name="validalogin" onsubmit="event.preventDefault(); validaLogin();">
-        <h1>Login</h1>
+    <div class="row">
+        <section id = "secao1">
+            <header>
+                <h2>Subtitulo (seção 1)</h2>
+            </header>
 
-        <label for="usuario">Usuario:</label>
-        <input id="usuario" name="usuario" type="text" placeholder="Nome de Usuario">
+            <article>
+                Conteudo da seção 1.
+            </article>
+            <footer>
+                Rodapé da seção
+            </footer>            
+        </section>
+        <aside id="secao2">
+            Conteudo da seção 2.
+        </aside>
+    </div>
 
-        <label for="senha">Senha:</label>
-        <input id="senha" name="senha" type="password" placeholder="Senha">
+    <footer class="rodape">
+        Rodapé do site.
+    </footer>
 
-        <button type="submit">Comparar!</button>
-    </form>
 
-    <script src="meuscript.js"></script>
+    <script src="/js/meuscript.js"></script>
 </body>
 </html>
